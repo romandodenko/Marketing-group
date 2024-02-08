@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Трак логистик - транспортная компания. Быстрые и надежные перевозки по России, Казахстану, Беларуси, Армении,Киргизии, Евросоюзу, Китаю, ДНР и ЛНР, включая отдаленные населенные пункты.">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <link rel="preload" href="./fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./resources/swiper/swiper.css">
+  <link rel="stylesheet" href="./resources/animates/aos/aos.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <script defer src="./resources/animates/gsap/gsap.min.js"></script>
+  <script defer src="./resources/swiper/swiper.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=91917327-f7a2-42ba-b391-62f86c9c6dee&lang=ru_RU"></script>
+  <script defer src="./resources/animates/aos/aos.js"></script>
+  <script defer src="./resources/validate/new/just-validate.min.js"></script>
+  <script defer src="./resources/validate/inputmask.js"></script>
+  <script defer src="./resources/animates/smooth-scroll-page/smooth-scroll.js"></script>
+  <script defer src="./js/main.js"></script>
+  <title>Трак логистик - транспортная компания.</title>
+</head>
+
+<body>
+  <div class="page aos-init">
+    <div class="scroll" id="scroll">
+      <header class="header">
+        <div class="header__container container">
+          <a class="header__logo" href="index.html" aria-label="Главная страница">
+            <img src="./img/logo.svg" loading="lazy" width="30" height="30" alt="Logo">
+          </a>
+          <div class="header__right">
+            <div class="header__menu">
+              <a class="header__logo header__logo_2" href="index.html" aria-label="Главная страница">
+                <img src="./img/logo.svg" loading="lazy" width="30" height="30" alt="Logo">
+              </a>
+              <nav class="nav" aria-label="Навигация">
+                <ul class="nav__list" aria-label="Список навигации">
+                  <li class="nav__item">
+                    <a class="nav__link link" href="#trucking" aria-label="Грузоперевозки">
+                      грузоперевозки
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="equipment-park.html" aria-label="Парк техники">
+                      парк техники
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="#price" aria-label="Стоимость">
+                      стоимость
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="#faq" aria-label="Вопрос-ответ">
+                      вопрос-ответ
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="vacansy.html" aria-label="Вакансии">
+                      вакансии
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="#contacts" aria-label="Контакты">
+                      контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__wrapper-phone header__wrapper-phone_2">
+                <a class="header__phone text-v2" href="tel:+79059617196" aria-label="Позвонить нам">
+                  <span class="header__icon">
+                    <svg width="20" height="20">
+                      <use xlink:href="./img/svg/sprites.svg#phone"></use>
+                    </svg>
+                  </span>
+                  <div>+7-905-961-7196
+                    <span>Звонок по россии бесплатный</span>
+                  </div>
+                </a>
+              </div>
+              <button class="header__button header__button_2 init-form button-v1" aria-label="Оставить заявку">оставить
+                заявку</button>
+              <button class="header__exit-menu"></button>
+            </div>
+            <div class="header__wrapper-phone">
+              <a class="header__phone text-v2" href="tel:+79059617196" aria-label="Позвонить нам">
+                <span class="header__icon">
+                  <svg width="20" height="20">
+                    <use xlink:href="./img/svg/sprites.svg#phone"></use>
+                  </svg>
+                </span>
+                <div>+7-905-961-7196
+                  <span>Звонок по россии бесплатный</span>
+                </div>
+              </a>
+            </div>
+            <button class="header__button init-form button-v1" aria-label="Оставить заявку">оставить заявку</button>
+            <button class="burger" aria-label="Скрытое меню">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="trucking trucking_2">
+          <div class="trucking__container container">
+            <div class="trucking__left" data-aos="fade-left" data-aos-duration="1000">
+              <h1 class="trucking__title title-v2">
+                <span>01</span>
+                Вакансии
+              </h1>
+            </div>
+            <div class="trucking__right">
+              <div class="top" data-aos="fade-left" data-aos-duration="1000">
+                <div class="top__descr">
+                  <p class="top__text top__text_color text-v1 ">
+                    Мы постоянно развиваемся и расширяем свой бизнес, поэтому ищем настоящих профессионалов, готовых
+                    присоединиться к нашей команде. Мы предлагаем хорошие возможности для развития карьеры,
+                    профессионального роста и обучения, а также высокую степень ответственности и уважение к каждому
+                    сотруднику.
+                  </p>
+                </div>
+                <div class="top__subtitle top__subtitle_color title-v3">
+                  [вакансии компании]
+                </div>
+              </div>
+              <div class="vacancy">
+                <ul class="vacancy-list" aria-label="Список вакансий">
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Водитель-экспедитор (Категория СЕ)
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          180 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Управление транспортными средствами категории «СЕ»
+                            </p>
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Перевозка по всем направлениям России
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Обеспечение исправности состояния вверенной техники
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Наличие водительских прав категории СЕ
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Навыки обслуживания а/м
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                             <p class="vacancy-list__trebs-text text-v3">
+                              Ответственное отношение к работе
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                             <p class="vacancy-list__trebs-text text-v3">
+                              Бережное отношение к ТС
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Трудоустройство согласно ТК,полный соц пакет
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График работы 15/15
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Работа на новых автомобилях Камаз 54901 и К5
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Суточные оплачиваются отдельно — 800р.
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Бонус 5000р. по программе «Приведи друга»
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Заработная плата без задержек 2 раза в месяц
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Работа в дружном коллективе
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Машинист автокрана
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          от 80 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Выполнение погрузочных и разгрузочных работ
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Строительно-монтажные работы
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Удостоверение Крановщика
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Опыт работы
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Наличие 7 разряда
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Трудоустройство согласно ТК, полный соц. пакет
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Частичная компенсация питания
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Наличие служебного транспорта
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График работы 10/5
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Заработная плата 4000р. за смену
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Механик
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          80 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Выпуск транспорта на линию
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Контроль технического состояния автотранспорта
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Организация и проведение ремонтов
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Закуп запчастей
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Работа с путевыми листами
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Урегулирование всех вопросов связанных с ГИБДД
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Перемещение ТС с одного объекта на другой
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Отчетность перед бухгалтерией
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Ремонт ТС не старше 2018г. (КАМАЗ, Урал, ГАЗ, крановые установки КАМАЗ, JCB, John Deere)
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Опыт работы в автотранспортном цехе с количеством ТС более 30 единиц техники
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Хорошие организационные навыки
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Умение работать в системе многозадачности
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Своевременная заработная плата два раза в месяц
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График работы 6/1 с 08:00 до 18:00
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Слесарь по ремонту грузового автотранспорта
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          от 57 000 до 60 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Разборка, <span> ремонт</span>, сборка сложных агрегатов, узлов и приборов и замена их при
+                              техническом обслуживании
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Выявление и устранение дефектов, неисправностей в процессе регулировки и испытания
+                              агрегатов, узлов и приборов
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item"> 
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Наличие опыта по ремонту Камаз, Урал, Газ, ВАЗ, УАЗ
+                            </p>
+                          </li>
+                          <li class="vacancy-list__trebs-item"> 
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Удостоверение подтверждающее квалификацию
+                            </p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График 2/2 с 08:00 до 20:00
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Трудоустройство согласно ТК, полный соц. пакет
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Заработная плата два раза в месяц без задержек
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Машинист экскаватора-погрузчика John Deere
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          от 60 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Управление экскаватором-погрузчиком
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Земляные работы
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Машинист экскаватора 5 разряда с открытой категорией С в удостоверение тракториста-машиниста
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Водитель погрузчика 4 разряда с открытой категорией С в удостоверении тракториста-машиниста
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Навык работы на гидромолоте и бурояме обязателен
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График 7/7 или 15/15
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Заработная плата 4 000 руб. за смену
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Работа в г. Кемерово
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Иногородним предоставляется жилье + командировочные
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Заработная плата два раза в месяц без задержек
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="vacancy-list__item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="vacancy-list__top">
+                      <div class="vacancy-list__top-left">
+                        <div class="vacancy-list__name text-v1 ">
+                          Водитель автобуса ГАЗ Луидор
+                        </div>
+                        <div class="vacancy-list__price text-v1 ">
+                          от 50 000 ₽ на руки
+                        </div>
+                      </div>
+                      <div class="vacancy-list__kadri title-v3 ">
+                        [отдел кадров: <span> <a href="tel:+79236001445"
+                            aria-label="Позвонить в отдел кадров">+7-923-600-14-45</a>]</span>
+                      </div>
+                    </div>
+                    <ul class="vacancy-list__bottom" aria-label="Список обязанностей, требований и условий">
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Обязанности]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список обязанностей">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Доставка сотрудников на работу и обратно
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Содержание автобуса в надлежащем состоянии
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Обеспечение безопасной перевозки пассажиров
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Требования]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список требований">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Категория D
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Опыт работы обязателен
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="vacancy-list__bottom-item">
+                        <div class="vacancy-list__subtitle title-v3">
+                          [Условия]
+                        </div>
+                        <ul class="vacancy-list__trebs" aria-label="Список условий">
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Работа в г. Кемерово
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              График работы 2/2
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              Трудоустройство согласно ТК, полный соц. пакет
+                            </p> 
+                          </li>
+                          <li class="vacancy-list__trebs-item">
+                            <p class="vacancy-list__trebs-text text-v3">
+                              <span> Работа в дружном коллективе, мы заботимся о каждом нашем сотруднике!</span>
+                            </p> 
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="vacancy__bottom" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="vacancy__bottom-text text-v1">
+                    Для отклика на любую вакансию вы можете заполнить данную форму. 
+                  </div>
+                  <div class="vacancy__bottom-text text-v1">
+                    Представитель отдела кадров вам перезвонит.
+                  </div>
+                   <div class="vacancy__bottom-text text-v1">
+                    Так-же любой вопрос по интересуемой вакансии вы можете задать по телефону <a href="tel:+79236001445" aria-label="Позвонить нам">+7-923-600-14-45</a>
+                  </div>
+                </div>
+                <div class="vacancy__wrapper-form" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="vacancy__subtitle title-v4">
+                    отклик на вакансию
+                  </div>
+                  <div class="hero-tabs hero-tabs_2">
+                    <form class="hero-tabs__form form-all hero-tabs-form vacancy-form" action="#!"
+                      name="Отследить-заказ" autocomplete="on" method="POST" enctype="multipart/form-data"
+                      aria-label="Отследить заказ">
+                      <input class="hidden-input" type="text" name="Отправлено-из-формы" value="Отклик на вакансию">
+                      <div class="hero-tabs-form__labels hero-tabs-form__labels_2">
+                        <div class="hero-tabs-form__top">
+                          <label class="hero-tabs-form__label" for="vacancyName">
+                            <span class="hero-tabs-form__text">
+                              ваше имя
+                            </span>
+                          </label>
+                          <div class="hero-tabs-form__wrapper-input">
+                            <input class="hero-tabs-form__input" type="text" name="Ваше-имя" id="vacancyName"
+                              placeholder="Иван" aria-label="Ваше имя">
+                          </div>
+                        </div>
+                        <div class="hero-tabs-form__top">
+                          <label class="hero-tabs-form__label" for="vacancyPhone">
+                            <span class="hero-tabs-form__text">
+                              телефон для связи
+                            </span>
+                          </label>
+                          <div class="hero-tabs-form__wrapper-input">
+                            <input class="hero-tabs-form__input" type="tel" name="Телефон" id="vacancyPhone"
+                              placeholder="Телефон" aria-label="Введите телефон">
+                          </div>
+                        </div>
+                      </div>
+                      <button class="hero-tabs-form__button" type="submit" aria-label="Отследить">отправить отклик</button>
+                    </form>
+                    <p class="hero-tabs__text"> 
+                      Нажимая на кнопку «Отправить отклик», вы соглашаетесь с <a href="terms.html">условиями обработки</a>
+                      персональных данных и <a href="terms.html">политикой конфиденциальности</a>
+                    </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer__container container">
+          <div class="footer__top">
+            <div class="footer__left">
+              <h2 class="footer__title title-v2">
+                <span class="span-title">08</span>
+                контакты
+              </h2>
+            </div>
+            <div class="footer__right">
+              <h3 class="footer__subtitle title-v3" data-da=".footer__left, 1220, 1">
+                [компания трак логистик]
+              </h3>
+            </div>
+          </div>
+          <div class="footer__content footer-content">
+            <div class="footer-content__left">
+              <ul class="footer-content__info" aria-label="Список информации">
+                <li class="footer-content__info-item">
+                  <h4 class="footer-content__title text-v3">
+                    Офис компании:
+                  </h4>
+                  <address class="footer-content__address text-v2">
+                    650021, г. Кемерово, <span>ул. Красноармейская, 3/1</span>
+                  </address>
+                </li>
+                <li class="footer-content__info-item">
+                  <h4 class="footer-content__title text-v3">
+                    понедельник – пятница
+                  </h4>
+                  <p class="footer-content__text text-v2">
+                    09:00 — 18:00
+                  </p>
+                </li>
+                <li class="footer-content__info-item">
+                  <h4 class="footer-content__title text-v3">
+                    Телефон:
+                  </h4>
+                  <a class="footer-content__tel text-v2" href="tel:+79059617196" aria-label="Позвонить нам">
+                    +7-905-961-7196
+                  </a>
+                </li>
+                <li class="footer-content__info-item">
+                  <h4 class="footer-content__title text-v3">
+                    Электронная почта:
+                  </h4>
+                  <a class="footer-content__tel text-v2" href="mailto:info@traklog.ru" aria-label="Написать нам">
+                    info@traklog.ru
+                  </a>
+                </li>
+                <li class="footer-content__info-item">
+                  <button class="footer-content__button init-form button-v2" aria-label="форма обратной связи">
+                    форма обратной связи
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content__right">
+              <div class="footer-content__wrapper-map">
+                <div class="footer-content__map" id="map"></div>
+              </div>
+              <ul class="footer-content__list" aria-label="Список ссылок">
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="#trucking">
+                    грузоперевозки
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="#price">
+                    стоимость
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="#faq">
+                    вопрос-ответ
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="equipment-park.html">
+                    парк техники
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="circular-delivery.html">
+                    круговая доставка
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="trucking.html">
+                    автоперевозки
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="vacansy.html">
+                    Вакансии
+                  </a>
+                </li>
+                <li class="footer-content__item">
+                  <a class="footer-content__link link" href="terms.html">
+                    политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="footer__developer" target="_blank" href="https://marketingroup.ru/">
+            <svg width="30" height="30">
+              <use xlink:href="./img/svg/sprites.svg#developer"></use>
+            </svg>
+            Разработка сайта
+          </a>
+        </div>
+      </footer>
+    </div>
+    <div class="curser-wrapper-form">
+      <div class="curser-wrapper-form__close"></div>
+      <div class="curser-wrapper-form__body">
+        <div class="curser-wrapper-form__item">
+          <h2 class="curser-wrapper-form__title title-v3">
+            Форма обратной связи
+          </h2>
+          <form class="curser-wrapper-form__form form-all curser-form" action="#!" name="Форма-обратной-связи"
+            autocomplete="on" method="POST" enctype="multipart/form-data" aria-label="Форма обратной связи">
+            <input class="hidden-input" type="text" name="Отправлено-из-формы" value="Обратной связи">
+            <div class="curser-form__top">
+              <label class="curser-form__label" for="curserName">
+                <span class="curser-form__text">
+                  Ваше имя
+                </span>
+              </label>
+              <div class="curser-form__wrapper-input">
+                <input class="curser-form__input" type="text" id="curserName" name="Имя-пользователя" placeholder="Имя"
+                  aria-label="Введите ваше имя">
+              </div>
+            </div>
+            <div class="curser-form__top">
+              <label class="curser-form__label" for="curserPhone">
+                <span class="curser-form__text">
+                  Телефон для связи
+                </span>
+              </label>
+              <div class="curser-form__wrapper-input">
+                <input class="curser-form__input" type="tel" id="curserPhone" name="Телефон-пользователя"
+                  placeholder="Телефон" aria-label="Введите ваш телефон">
+              </div>
+            </div>
+            <div class="curser-form__wrapper-textarea">
+              <span class="curser-form__text">
+                Комментарий
+              </span>
+              <textarea class="curser-form__textarea" name="Комментарий" id="curcerCommentary"></textarea>
+            </div>
+            <button class="curser-form__button button-v1" type="submit" aria-label="Отправить форму">Отправить</button>
+          </form>
+        </div>
+        <div class="okay">
+          <strong class="okay__title title-v3">
+            Успешно отправлено!
+          </strong>
+          <p class="okay__text text-v1">
+            Мы с вами обязательно свяжемся.
+          </p>
+        </div>
+        <div class="wrapper-spinner-curser">
+          <div class="wrapper-spinner-curser__wrapper-spinner">
+            <div class="wrapper-spinner-curser__circle wrapper-spinner-curser__circle_1"></div>
+            <div class="wrapper-spinner-curser__circle wrapper-spinner-curser__circle_2"></div>
+          </div>
+        </div>
+        <div class="curse-error">
+          <strong class="curse-error__title title-v3">
+            Извините произошла ошибка!
+          </strong>
+          <p class="curse-error__text text-v1">
+            Попробуйте позже
+          </p>
+        </div>
+        <button class="curser-wrapper-form__exit" aria-label="Закрыть форму">
+          <svg width="10" height="10">
+            <use xlink:href="./img/svg/sprites.svg#exit-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="wrapper-error">
+      <div class="wrapper-error__close"></div>
+      <div class="wrapper-error__body">
+        <strong class="wrapper-error__title title-v3">
+          Извините произошла ошибка!
+        </strong>
+        <p class="wrapper-error__text text-v1">
+          Попробуйте позже
+        </p>
+        <button class="wrapper-error__exit" aria-label="Закрыть ошибку">
+          <svg width="10" height="10">
+            <use xlink:href="./img/svg/sprites.svg#exit-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="wrapper-okay">
+      <div class="wrapper-okay__close"></div>
+      <div class="wrapper-okay__okay">
+        <strong class="wrapper-okay__title title-v3">
+          Успешно отправлено!
+        </strong>
+        <p class="wrapper-okay__text text-v1">
+          Мы с вами обязательно свяжемся.
+        </p>
+        <button class="wrapper-okay__exit" aria-label="Закрыть попап">
+          <svg width="10" height="10">
+            <use xlink:href="./img/svg/sprites.svg#exit-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <button class="upper">
+      <svg width="10" height="10">
+        <use xlink:href="./img/svg/sprites.svg#upper"></use>
+      </svg>
+    </button>
+    <div class="page-spinner">
+      <div class="page-spinner__wrapper-spinner">
+        <div class="page-spinner__circle page-spinner__circle_1"></div>
+        <div class="page-spinner__circle page-spinner__circle_2"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

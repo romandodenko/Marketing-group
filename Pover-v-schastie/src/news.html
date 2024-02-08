@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta name="language" content="Russian">
+  <meta name="robots" content="index, follow">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Новости">
+  <meta property="og:site_name" content="Описание страницы">
+  <meta property="og:url" content="https://site.ru/">
+  <meta property="og:image" content="https://site.ru/main.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Главная">
+  <meta property="og:image:type" content="image/png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Новости">
+  <meta name="twitter:description" content="Описание страницы">
+  <meta name="twitter:site" content="https://site.ru/">
+  <meta name="twitter:image" content="https://site.ru/main.png">
+  <meta name="description" content="Описание страницы">
+  <title>Новости</title>
+  <link rel="canonical" href="https://site.ru/">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preload" href="./fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/RobotoSlab-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/RobotoSlab-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Caravan-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./resources/airdatepicker-calendar/air-datepicker.css">
+  <link rel="stylesheet" href="./css/main-min.css">
+  <script src="./resources/validate/new/just-validate.min.js"></script>
+  <script src="./resources/tooltip/popper.min.js"></script>
+  <script src="./resources/tooltip/tippy.js"></script>
+  <script src="./resources/airdatepicker-calendar/air-datepicker.js"></script>
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <!-- Начало header -->
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo logo rd-upload" href="/" aria-label="Главная страница">
+          <img src="." data-rd-image="./img/svg/logo.svg" width="157" height="65"
+            alt="Логотип благотворительного фонда">
+        </a>
+        <div class="header__menu">
+          <nav class="nav" aria-label="Навигация">
+            <ul class="nav__list" aria-label="Список навигации">
+              <li class="nav__item nav__item_header">
+                <div class="nav__item-body">
+                  <button class="nav__button nav-button tx-20-16" aria-label="Кто мы">
+                    Кто мы
+                    <svg width="12" height="8">
+                      <use xlink:href="./img/sprites/sprites.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="nav-dropdown">
+                    <button class="nav-dropdown__exit" aria-label="Закрыть выпадающий список навигации">
+                      <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+                      </svg>
+                    </button>
+                    <ul class="nav-dropdown__list" aria-label="Список навигации выпадающего списка">
+                      <li class="nav-dropdown__item">
+                        <a href="popechitelskiy-sovet.html" aria-label="Попечительский совет">
+                          Попечительский совет
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="expertniy-sovet.html" aria-label="Экспертный совет">
+                          Экспертный совет
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="teams.html" aria-label="Команда">
+                          Команда
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="fond-v-smi.html" aria-label="Фонд в СМИ">
+                          Фонд в СМИ
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="nagradi.html" aria-label="Награды">
+                          Награды
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="documents.html" aria-label="Документы">
+                          Документы
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="nam-pomogaut.html" aria-label="Нам помогают">
+                          Нам помогают
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="contacts.html" aria-label="Контакты">
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item nav__item_header">
+                <div class="nav__item-body">
+                  <button class="nav__button nav-button tx-20-16" aria-label="Что мы делаем">
+                    Что мы делаем
+                    <svg width="12" height="8">
+                      <use xlink:href="./img/sprites/sprites.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="nav-dropdown">
+                    <button class="nav-dropdown__exit" aria-label="Закрыть выпадающий список навигации">
+                      <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+                      </svg>
+                    </button>
+                    <ul class="nav-dropdown__list" aria-label="Список навигации выпадающего списка">
+                      <li class="nav-dropdown__item">
+                        <a href="podopechie.html" aria-label="Подопечные">
+                          Подопечные
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="yje-pomogli.html" aria-label="Уже помогли">
+                          Уже помогли
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="napravleniya.html" aria-label="Направления">
+                          Направления
+                        </a>
+                      </li>
+                      <!-- <li class="nav-dropdown__item">
+                        <a href="projects.html" aria-label="Проекты">
+                          Проекты
+                        </a>
+                      </li> -->
+                      <li class="nav-dropdown__item">
+                        <a href="meropriyatiya.html" aria-label="Мероприятия">
+                          Мероприятия
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="news.html" aria-label="Новости">
+                          Новости
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item nav__item_header">
+                <div class="nav__item-body">
+                  <button class="nav__button nav-button tx-20-16" aria-label="Как помочь">
+                    Как помочь
+                    <svg width="12" height="8">
+                      <use xlink:href="./img/sprites/sprites.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="nav-dropdown">
+                    <button class="nav-dropdown__exit" aria-label="Закрыть выпадающий список навигации">
+                      <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+                      </svg>
+                    </button>
+                    <ul class="nav-dropdown__list" aria-label="Список навигации выпадающего списка">
+                      <li class="nav-dropdown__item">
+                        <a href="chasntnie-lica.html" aria-label="Для частных лиц">
+                          Для частных лиц
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="biznes.html" aria-label="Для бизнеса">
+                          Для бизнеса
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="volonteri.html" aria-label="Для волонтеров">
+                          Для волонтеров
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item nav__item_header">
+                <div class="nav__item-body">
+                  <button class="nav__button nav-button tx-20-16" aria-label="Отчеты">
+                    Отчеты
+                    <svg width="12" height="8">
+                      <use xlink:href="./img/sprites/sprites.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <div class="nav-dropdown">
+                    <button class="nav-dropdown__exit" aria-label="Закрыть выпадающий список навигации">
+                      <svg width="16" height="16">
+                        <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+                      </svg>
+                    </button>
+                    <ul class="nav-dropdown__list" aria-label="Список навигации выпадающего списка">
+                      <li class="nav-dropdown__item">
+                        <a href="otcheti.html" aria-label="Годовые отчеты">
+                          Годовые отчеты
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="finansovie-otcheti.html" aria-label="Ежемесячные финансовые отчеты">
+                          Ежемесячные финансовые отчеты
+                        </a>
+                      </li>
+                      <li class="nav-dropdown__item">
+                        <a href="informacionnie-otcheti.html" aria-label="Ежемесячные информационные отчеты">
+                          Ежемесячные информационные отчеты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__exit-menu" aria-label="Закрыть скрытое меню">
+            <svg width="16" height="16">
+              <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__right">
+          <button class="burger" aria-label="Скрытое меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="header__button but rd-upload" href="nyjna-pomow.html" aria-label="Нужна помощь">
+            <img src="." data-rd-image="./img/svg/help.svg" width="24" height="24" alt="Нужна помощь">
+            Нужна помощь
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list" aria-label="Список навигации на странице">
+            <li class="breadcrumbs__list-item circle">
+              <a class="breadcrumbs__link tx-16-14 tx-16-14_500" href="/" aria-label="Главная">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__list-item circle">
+              <a class="breadcrumbs__link tx-16-14 tx-16-14_500" href="#!" aria-label="Что мы делаем">
+                Что мы делаем
+              </a>
+            </li>
+            <li class="breadcrumbs__list-item active circle">
+              <a class="breadcrumbs__link tx-16-14 tx-16-14_500" href="news.html" aria-label="Новости">
+                Новости
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Конец header -->
+    <main>
+      <!-- Начало status-send -->
+      <section class="status-send">
+        <h2 class="visually-hidden">
+          Статусы отправки формы: Отправлено, ошибка, отправляется
+        </h2>
+        <div class="status-send__close"></div>
+        <div class="status-send__content">
+          <div class="status-send__body">
+            <button class="status-send__exit" aria-label="Закрыть попап">
+              <svg width="32" height="32">
+                <use xlink:href="./img/sprites/sprites.svg#exit"></use>
+              </svg>
+            </button>
+            <div class="status-send__status status-error">
+              <div class="status-send__icon status-send__icon_error">
+                <svg width="52" height="52">
+                  <use xlink:href="./img/sprites/sprites.svg#error"></use>
+                </svg>
+              </div>
+              <div class="status-send__text tx-20-16">
+                Произошла ошибка! Повторите ещё раз.
+              </div>
+            </div>
+            <div class="status-send__status status-okay">
+              <div class="status-send__icon status-send__icon_send">
+                <svg width="52" height="52">
+                  <use xlink:href="./img/sprites/sprites.svg#send"></use>
+                </svg>
+              </div>
+              <div class="status-send__text tx-20-16">
+                Спасибо! Успешно отпралено.
+              </div>
+            </div>
+            <div class="status-send__status status-sendler active">
+              <div class="status-send__preload">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Конец status-send -->
+
+      <!-- Начало page-navigation -->
+      <section class="page-navigation rd-upload">
+        <div class="container">
+          <h2 class="visually-hidden">Пагинация на странице</h2>
+          <nav class="page-navigation__nav">
+            <ul class="page-navigation__list scroll" aria-label="Список пагинации на странице">
+              <li class="page-navigation__list-item">
+                <a class="page-navigation__list-link tx-16-14" href="podopechie.html" aria-label="Подопечные">
+                  Подопечные
+                </a>
+              </li>
+              <li class="page-navigation__list-item">
+                <a class="page-navigation__list-link tx-16-14" href="yje-pomogli.html" aria-label="Уже помогли">
+                  Уже помогли
+                </a>
+              </li>
+              <li class="page-navigation__list-item">
+                <a class="page-navigation__list-link tx-16-14" href="napravleniya.html" aria-label="Направления">
+                  Направления
+                </a>
+              </li>
+              <li class="page-navigation__list-item">
+                <a class="page-navigation__list-link tx-16-14" href="meropriyatiya.html" aria-label="Мероприятия">
+                  Мероприятия
+                </a>
+              </li>
+              <li class="page-navigation__list-item">
+                <a class="page-navigation__list-link active tx-16-14" href="news.html" aria-label="Новости">
+                  Новости
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- Конец page-navigation -->
+
+      <!-- Начало news -->
+      <section class="news news_page">
+        <div class="news__container container">
+          <h1 class="news__title tt-40-28">
+            Новости
+          </h1>
+          <div class="news__el">
+            <div class="news__subtitle tx-24-20 tx-24-20_300">
+              Основные новости
+            </div>
+            <ul class="news-big" aria-label="Список основных новостей">
+              <li class="news-big__item">
+                <div class="news-big__top rd-upload rd-background" data-rd-image="./img/news-big-1.webp">
+                  <div class="news-big__top-titles">
+                    <div class="news-big__title tt-96-28">
+                      Благотворительный вечер
+                    </div>
+                    <div class="news-big__subtitle tt-32-24 tt-32-24_600">
+                      25 февраля 2024 года
+                    </div>
+                  </div>
+                </div>
+                <div class="news-big__texts">
+                  <p class="news-big__text tx-20-16">
+                    Кемерово, 29 января. /ВестиКузбасс/. Московский государственный академический камерный хор (Хор
+                    Минина) и Евразийская Палата национальных культурных ценностей проведут благотворительный вечер для
+                    участников специальной военной операции и членов их семей. В программу вечера войдут экскурсия по
+                    основной и временной экспозициям Государственного музея А.С. Пушкина и концерт "Приношение Пушкину".
+                    "Задача очередного Благотворительного вечера - персональная адресная помощь участникам специальной
+                    военной операции, членам их семей, предоставление им культурно-патриотической, социальной и
+                    психологической поддержки", - приводит пресс-служба хора слова президента Евразийской
+                  </p>
+                  <p class="news-big__text tx-20-16">
+                    Палаты национальных культурных ценностей Александра Швейделя.
+                    "Сейчас тысячи наших бойцов жертвуют своим здоровьем и жизнью за всех жителей России, в том числе, и
+                    за нас - артистов. И если наше искусство способно доставить этим смелым людям добрые эмоции, мы
+                    всегда готовы делиться ими", - отметил директор Хора Минина Дмитрий Сибирцев.
+                    По словам организаторов, в программе благотворительного вечера - экскурсия по основной и временной
+                    экспозициям музея и концерт "Приношение Пушкину", посвященный 225-летию со дня рождения поэта.
+                    Зрителям будет представлена музыка Михаила Глинки, Петра Чайковского, Николая Римского-Корсакова,
+                    Сергея Рахманинова, Георгия Свиридова и других композиторов. Также прозвучат арии, дуэты,
+                    оркестровые фрагменты опер на сюжеты Пушкина, романсы и хоровые сочинения на его стихи.
+                  </p>
+                </div>
+              </li>
+              <li class="news-big__item">
+                <div class="news-big__top rd-upload rd-background" data-rd-image="./img/news-big-2.webp">
+                  <div class="news-big__top-titles">
+                    <div class="news-big__title tt-96-28">
+                      Ваня получил помощь
+                    </div>
+                    <div class="news-big__subtitle tt-32-24 tt-32-24_600">
+                      29 января 2024 года
+                    </div>
+                  </div>
+                </div>
+                <div class="news-big__texts">
+                  <p class="news-big__text tx-20-16">
+                    4 декабря 2020 года мама И., Наталия К., получила результаты анализов, подтвердившие у ребенка
+                    спинальную мышечную атрофию (СМА) 1-го типа. 19 декабря появилас группа помощи в социальной сети
+                    «ВКонтакте».Матерью были подписаны договоры с фондами, 12.01.2021 и 2.02.2021 года соответственно.
+                    Как и в других золгенсма-сборах, помимо реквизитов фондов активно шел сбор на личные реквизиты
+                    родителей. В постах можно найти номера карт, оформленных в ПАО «Сбербанк России», АО «Альфа-Банк»,
+                    АО «Тинькофф Банк», Банк ВТБ (ПАО), АО «Газпромбанк», АО «Райффайзенбанк». Указывался и номер
+                    телефона, к которому эти счета привязаны, «для удобства жертвователя». Но некоторые банки позволяют
+                    привязать к одному номеру несколько карт, и выбор, на какую из них будут зачислены деньги, может
+                    быть неочевиден.
+                  </p>
+                  <p class="news-big__text tx-20-16">
+                    По этому же договору собранные средства могут быть потрачены на «приобретение и транспортировку
+                    комплекса внутривенной инъекции Zolgensma... а также на оплату реабилитации, лечения в стационарных
+                    клиниках РФ и за рубежом, приобретение медикаментов и средств технической реабилитации для И.
+                    Благотворительной помощью считается также оплата... расходов... по транспортировке к месту введения
+                    инъекции золгенсма, расходов по проживанию, питанию и иных расходов, связанных с исполнением данного
+                    договора».Такой расширенный список имеет смысл. Сбор $2 млн может затянуться на месяцы и даже годы.
+                    Ребенку, даже если он получает патогенетическое лечение, может потребоваться иная срочная помощь,
+                    например транспортировка санавиацией в федеральную клинику из местной больницы, оплата
+                    госпитализации и консультации специалистов. Без всего этого до «волшебного укола» малыш может просто
+                    не дожить.Именно в рамках этой логики фонд «Мать и Дитя» в мае-июне 2021 года сперва договорился с
+                    ФГАУ «Национальный медицинский исследовательский центр здоровья детей» о госпитализации И., а потом
+                    оплатил обследование и лечение ребенка в Москве.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="news__el">
+            <div class="news__subtitle tx-24-20 tx-24-20_300">
+              Еще новости
+            </div>
+            <ul class="news__list news__list_page" aria-label="Список новостей">
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  29.12.2023 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: Фонд «Поверь в счастье» посетил детский дом «Малютка»">
+                  <img src="." data-rd-image="./img/news-1.webp" width="336" height="336"
+                    alt="Фонд «Поверь в счастье» посетил детский дом «Малютка»">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: Фонд «Поверь в счастье» посетил детский дом «Малютка»">
+                    Фонд «Поверь в счастье» посетил детский дом «Малютка»
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    В декабре прошлого года благотворительный фонд "Поверь в счастье" посетил детский приют "Малютка",
+                    чтобы подарить детям радость и поддержку к наступающему Новому году. Волонтеры фонда организовали
+                    праздничное мероприятие с анимацией, играми и конкурсами для детей.
+                    Кроме того, каждый ребенок получил подарок от фонда, который был подобран специально для него. Это
+                    были игрушки, книги, одежда и другие нужные вещи, которые принесли улыбки на лица детей. Они были
+                    очень рады такому вниманию и заботе.
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: Фонд «Поверь в счастье» посетил детский дом «Малютка»">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  12.11.2023 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: Коля пошел на поправку и скоро поедет домой">
+                  <img src="." data-rd-image="./img/news-2.webp" width="336" height="336"
+                    alt="Коля пошел на поправку и скоро поедет домой">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: Коля пошел на поправку и скоро поедет домой">
+                    Коля пошел на поправку и скоро поедет домой
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    После серии обследований выяснилось, что у Джейка была серьезная проблема с почками. Это стало для
+                    семьи большим шоком, и они поняли, что им нужно немедленно начать лечение. Для этого им
+                    потребовались
+                    значительные финансовые ресурсы, которых у них не было. Однако благодаря поддержке благотворительных
+                    организаций и людей, готовых помочь, они смогли собрать необходимые средства для лечения Джейка. В
+                    конечном итоге мальчик выздоровел благодаря добрым сердцам людей, готовых помочь больным детям.
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: Коля пошел на поправку и скоро поедет домой">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  29.12.2023 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                  <img src="." data-rd-image="./img/news-3.webp" width="336" height="336"
+                    alt="Сбор средств для маленького Павлика завершается">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                    Сбор средств для маленького Павлика завершается
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    В декабре прошлого года благотворительный фонд "Поверь в счастье" посетил детский приют "Малютка",
+                    чтобы подарить детям радость и поддержку к наступающему Новому году. Волонтеры фонда организовали
+                    праздничное мероприятие с анимацией, играми и конкурсами для детей.
+                    Кроме того, каждый ребенок получил подарок от фонда, который был подобран специально для него. Это
+                    были игрушки, книги, одежда и другие нужные вещи, которые принесли улыбки на лица детей. Они были
+                    очень рады такому вниманию и заботе.
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  15.03.2024 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: “Счастье детям” организует благотворительный праздник масленницы">
+                  <img src="." data-rd-image="./img/news-4.webp" width="336" height="336"
+                    alt="“Счастье детям” организует благотворительный праздник масленницы">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: “Счастье детям” организует благотворительный праздник масленницы">
+                    “Счастье детям” организует благотворительный праздник масленницы
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    Масленица — древний славянский праздник с многочисленными обычаями, через века дошедший до наших
+                    дней. Отмечается в течение недели перед Великим постом. Масленица в 2024 году отмечается с 11 по 17
+                    марта. Масленица — это веселые проводы зимы, озаренные радостным ожиданием близкого тепла, весеннего
+                    обновления природы.
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: “Счастье детям” организует благотворительный праздник масленницы">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  09.01.2024 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: Еще один ребенок получил помощь благодаря БФ “Счастье детям” ">
+                  <img src="." data-rd-image="./img/news-5.webp" width="336" height="336"
+                    alt="Еще один ребенок получил помощь благодаря БФ “Счастье детям” ">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: Еще один ребенок получил помощь благодаря БФ “Счастье детям” ">
+                    Еще один ребенок получил помощь благодаря БФ “Счастье детям”
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    4 декабря 2020 года мама И., Наталия К., получила результаты анализов, подтвердившие у ребенка
+                    спинальную мышечную атрофию (СМА) 1-го типа. 19 декабря появилас группа помощи в социальной сети
+                    «ВКонтакте».Матерью были подписаны договоры с фондами, 12.01.2021 и 2.02.2021 года соответственно.
+                    Как и в других золгенсма-сборах, помимо реквизитов фондов активно шел сбор на личные реквизиты
+                    родителей. В постах можно найти номера карт, оформленных в ПАО «С
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: Еще один ребенок получил помощь благодаря БФ “Счастье детям” ">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+              <li class="news-item news-card">
+                <div class="news-card__data tx-16-14 tx-16-14_400 rd-upload">
+                  <svg width="19" height="19">
+                    <use xlink:href="./img/sprites/sprites.svg#data"></use>
+                  </svg>
+                  29.01.2024 Кемерово
+                </div>
+                <a class="news-card__image rd-upload" href="news-detail.html"
+                  aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                  <img src="." data-rd-image="./img/news-6.webp" width="336" height="336"
+                    alt="Сбор средств для маленького Павлика завершается">
+                </a>
+                <div class="news-card__descr">
+                  <a class="news-card__name tx-24-20" href="news-detail.html"
+                    aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                    Сбор средств для маленького Павлика завершается
+                  </a>
+                  <p class="news-card__text tx-16-14 tx-16-14">
+                    В декабре прошлого года благотворительный фонд "Поверь в счастье" посетил детский приют "Малютка",
+                    чтобы подарить детям радость и поддержку к наступающему Новому году. Волонтеры фонда организовали
+                    праздничное мероприятие с анимацией, играми и конкурсами для детей.
+
+                    Кроме того, каждый ребенок получил подарок от фонда, который был подобран специально для него. Это
+                    были игрушки, книги, одежда и другие нужные вещи, которые принесли улыбки на лица детей. Они были
+                    очень рады такому вниманию и заботе.
+                  </p>
+                  <a class="news-card__link but" href="news-detail.html"
+                    aria-label="Читать новость: Сбор средств для маленького Павлика завершается">
+                    Читать далее
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <ul class="paginator" aria-label="Пагинация страницы">
+              <li class="paginator__item tx-16-14">
+                <a class="paginator__link active" href="#!" aria-label="Страница: 1">
+                  1
+                </a>
+              </li>
+              <li class="paginator__item tx-16-14">
+                <a class="paginator__link" href="#!" aria-label="Страница: 2">
+                  2
+                </a>
+              </li>
+              <li class="paginator__item tx-16-14">
+                <a class="paginator__link" href="#!" aria-label="Страница: 3">
+                  3
+                </a>
+              </li>
+              <li class="paginator__item tx-16-14">
+                ...
+              </li>
+              <li class="paginator__item tx-16-14">
+                <a class="paginator__link" href="#!" aria-label="Страница: 32">
+                  32
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Конец news -->
+
+      <!-- Начало if-help -->
+      <section class="if-help rd-upload">
+        <div class="if-help__container container">
+          <h2 class="visually-hidden">Если ребенку нужна помощь или по вопросам сотрудничества:</h2>
+          <ul class="if-help__list" aria-label="Список информации если нужна помощь или по вопросам сотрудничества">
+            <li class="if-help__item">
+              <div class="if-help__subtitle tx-24-20">
+                Если ребенку нужна помощь:
+              </div>
+              <a class="if-help__link if-help__link_letter tx-24-20" href="tel:88005553535"
+                aria-label="Позвонить 88005553535">
+                8-800-555-3535
+              </a>
+              <a class="if-help__link tx-20-16" href="mailto:Info@povervchudo.ru"
+                aria-label="Написать Info@povervchudo.ru">
+                Info@povervchudo.ru
+              </a>
+              <p class="if-help__text tx-14-12">
+                Звонок бесплатный для всех регионов России
+              </p>
+            </li>
+            <li class="if-help__item">
+              <div class="if-help__subtitle tx-24-20">
+                По вопросам сотрудничества:
+              </div>
+              <a class="if-help__link if-help__link_letter tx-24-20" href="tel:88005553737"
+                aria-label="Позвонить 88005553737">
+                8-800-555-3737
+              </a>
+              <a class="if-help__link tx-20-16" href="mailto:partners@povervchudo.ru"
+                aria-label="Написать partners@povervchudo.ru">
+                partners@povervchudo.ru
+              </a>
+              <p class="if-help__text tx-14-12">
+                Все телефоны работают с понедельника по пятницу с 09:00 до 18:00
+              </p>
+            </li>
+          </ul>
+          <a class="if-help__button but but_border-white" href="chasntnie-lica.html" aria-label="Хочу помочь">
+            Хочу помочь
+          </a>
+        </div>
+      </section>
+      <!-- Конец if-help -->
+    </main>
+    <!-- Начало footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <nav class="nav nav_footer" aria-label="Навигация сайта">
+            <ul class="nav__list nav__list_footer" aria-label="Список навигации сайта">
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="/#about" aria-label="О фонде">
+                  О фонде
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="news.html" aria-label="Новости">
+                  Новости
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="nam-pomogaut.html"
+                  aria-label="Нам помогают">
+                  Нам помогают
+                </a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list_footer" aria-label="Список навигации сайта">
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="popechitelskiy-sovet.html"
+                  aria-label="Попечительский совет">
+                  Попечительский совет
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="expertniy-sovet.html"
+                  aria-label="Экспертный совет">
+                  Экспертный совет
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="contacts.html" aria-label="Контакты">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <ul class="nav__list nav__list_footer" aria-label="Список навигации сайта">
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="teams.html" aria-label="Команда">
+                  Команда
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="otcheti.html" aria-label="Отчеты">
+                  Отчеты
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link_white tx-20-16 tx-20-16_300" href="documents.html" aria-label="Документы">
+                  Документы
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-left">
+            <ul class="icons" aria-label="Список социальных сетей">
+              <li class="icons__icon rd-upload">
+                <a href="#!" aria-label="Социальная сеть телеграм">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprites/sprites.svg#tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons__icon rd-upload">
+                <a href="#!" aria-label="Социальная сеть вконтакте">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprites/sprites.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons__icon rd-upload">
+                <a href="#!" aria-label="Социальная сеть одноклассники">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprites/sprites.svg#od"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="oferta tx-14-12">
+              Осуществляя пожертвование любым из способов, вы принимаете <a href="./files/Договор_оферты.docx" download
+                aria-label="Условия оферты">условия оферты</a>
+            </div>
+          </div>
+          <div class="footer-wrapper-form">
+            <div class="footer-wrapper-form__title tx-20-16">
+              Подписаться на рассылку
+            </div>
+            <form class="subscribe-form" method="POST" action="#!" name="Подписаться на рассылку:" autocomplete="off"
+              enctype="multipart/form-data" aria-label="Подписаться на рассылку">
+              <label class="subscribe-form__label" for="subscribe_form_email">
+                <input class="subscribe-form__input input" type="email" name="Подпись на рассылку:"
+                  id="subscribe_form_email" placeholder="Введите ваш e-mail:" required aria-label="Введите ваш e-mail">
+              </label>
+              <button class="subscribe-form__button but but but_border-white" type="submit"
+                aria-label="Подписаться">подписаться</button>
+            </form>
+            <div class="footer-wrapper-form__text tx-14-12">
+              Согласие на <a href="./files/Политика_конфиденциальности.docx" download
+                aria-label="Обработка персональных данных">обработку персональных
+                данных</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Конец footer -->
+  </div>
+</body>
+
+</html>

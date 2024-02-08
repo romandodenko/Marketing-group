@@ -1,0 +1,241 @@
+:root {
+  // Шрифты
+  --font-main: "RobotoMono", sans-serif; // главный шрифт на странице
+  --font-second: "Oswald", sans-serif; // второй шрифт на странице
+  --font-triple: "Furore", sans-serif; // третий шрифт на странице
+
+  // Контейнер
+  --container-width: 1840px; // ширина контейнера
+  --container-step: 40px; // падинги по бокам на пк
+  --container-step-tablet: 15px; // падинги по бокам на планшетах
+  --container-step-mobile: 10px; // падинги по бокам на мобилках
+  --container: calc(var(--container-width) + (var(--container-step) * 2)); // сам контейнер
+
+  // Цвета
+  --background-page: transparent; // бекграунд страницы
+  --deep-blue: #050C1F;
+  --white: #ffffff;
+  --rgba: rgba(5, 12, 31, 0.8);
+  --blue: #0072BC;
+  --dark: #050C1F;
+  --dark2: #414042;
+  --dark3: #232323;
+  --linear: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --linear2: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #FDFEFF;
+  --light-blue: #EBF1F5;
+  --gray: #7C7C7C;
+  --gray2: #F3F3F3;
+
+  --hover: #0072BC; // цвет при ховере
+  --active: #07629e; // цвет при активе
+  --hover2: #050C1F; // цвет при ховере
+  --active2: #121b33; // цвет при активе
+}
+
+
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--container-step);
+
+  @media (max-width: 991px) {
+    padding: 0 var(--container-step-tablet);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--container-step-mobile);
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--background-page);
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.main-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.tt-1 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 1;
+
+  @media (max-width: 991px) {
+    font-size: 75px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 60px;
+  }
+}
+
+.tt-2 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    font-size: 26px;
+  }
+}
+
+.tt-3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.tt-4 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  @media (max-width: 991px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 26px;
+  }
+}
+
+.tt-5 {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.num {
+  font-family: var(--font-triple);
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 66.666667%;
+
+  @media (max-width: 1220px) {
+    font-size: 100px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 120px;
+  }
+}
+
+.num-2 {
+  font-family: var(--font-triple);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66.666667%;
+
+  @media (max-width: 991px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.num-3 {
+  font-family: var(--font-triple);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+
+  @media (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.tx-1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133.333333%;
+}
+
+.tx-2 {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 118.181818%;
+}
+
+.tx-3 {
+  font-family: var(--font-triple);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121.428571%;
+  text-transform: uppercase;
+}
+
+.tx-4 {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 120%;
+}
+
+.but-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 195px;
+  min-height: 24px;
+  width: fit-content;
+  padding: 3px 15px 5px 15px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.line {
+  width: 100%;
+  max-width: 840px;
+  height: 1px;
+  background-color: rgba(5, 12, 31, 0.2);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
