@@ -33,15 +33,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'top-aboutsport'; // Логин на почте , если использовать yandex то нужно указывать логин, а не всю почту
-  $mail->Password   = 'gvytylrzcuynbmxa'; // Пароль на почте
+  $mail->Username   = ''; // Логин на почте , если использовать yandex то нужно указывать логин, а не всю почту
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('top-aboutsport@yandex.ru', 'Сообщение с сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Сообщение с сайта'); // Адрес самой почты и имя отправителя
  
   // Получатель письма
-  $mail->addAddress('creed6695@mail.ru');
+  $mail->addAddress('');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {

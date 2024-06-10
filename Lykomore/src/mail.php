@@ -33,16 +33,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'annaklemmerartist'; // Логин на почте , если использовать yandex то нужно указывать логин, а не всю почту
-  $mail->Password   = 'trueTramp88'; // Пароль на почте
+  $mail->Username   = ''; // Логин на почте , если использовать yandex то нужно указывать логин, а не всю почту
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('annaklemmerartist@yandex.ru', 'Заявка на бронирования'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Заявка на бронирования'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('creed6695@mail.ru');
-  // $mail->addAddress('bron@po-lukomorye.ru');
+  $mail->addAddress('');
 
   // Прикрипление файлов к письму
   // if (!empty($file['name'][0])) {

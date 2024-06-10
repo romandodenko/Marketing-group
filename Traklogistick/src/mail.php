@@ -33,15 +33,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'pure-essentie'; // Логин на почте
-  $mail->Password   = 'trumpTrust88'; // Пароль на почте
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('pure-essentie@yandex.ru', 'Трак логистик. Письмо с сайта.'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Трак логистик. Письмо с сайта.'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('creed6695@mail.ru');
+  $mail->addAddress('');
  
   // Отправка сообщения
   $mail->isHTML(true);
