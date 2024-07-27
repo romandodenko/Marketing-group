@@ -210,35 +210,35 @@ if (prodykciaListItem) {
 
 // Транзишен для элементов nav__item
 
-const navItem = document.querySelector(".nav__item");
+// const navItem = document.querySelector(".nav__item");
 
-if (navItem) {
-  const navItemAll = document.querySelectorAll(".nav__item");
-  let transDelayW = 0.03;
-  navItemAll.forEach(function (e) {
-    let transDelay = 0.03;
-    let transDelayQ = transDelayW + transDelay;
-    transDelayW = transDelayQ;
+// if (navItem) {
+//   const navItemAll = document.querySelectorAll(".nav__item");
+//   let transDelayW = 0.03;
+//   navItemAll.forEach(function (e) {
+//     let transDelay = 0.03;
+//     let transDelayQ = transDelayW + transDelay;
+//     transDelayW = transDelayQ;
 
-    e.style.transitionDelay = transDelayW + "s";
-  })
-}
+//     e.style.transitionDelay = transDelayW + "s";
+//   })
+// }
 
 // Транзишен для элементов hero-slider__slide
 
-const heroItemItem = document.querySelector(".hero-slider__slide");
+// const heroItemItem = document.querySelector(".hero-slider__slide");
 
-if (heroItemItem) {
-  const heroItemItemAll = document.querySelectorAll(".hero-slider__slide");
-  let transDelayW = 0.05;
-  heroItemItemAll.forEach(function (e) {
-    let transDelay = 0.05;
-    let transDelayQ = transDelayW + transDelay;
-    transDelayW = transDelayQ;
+// if (heroItemItem) {
+//   const heroItemItemAll = document.querySelectorAll(".hero-slider__slide");
+//   let transDelayW = 0.05;
+//   heroItemItemAll.forEach(function (e) {
+//     let transDelay = 0.05;
+//     let transDelayQ = transDelayW + transDelay;
+//     transDelayW = transDelayQ;
 
-    e.style.transitionDelay = transDelayW + "s";
-  })
-}
+//     e.style.transitionDelay = transDelayW + "s";
+//   })
+// }
 
 // Транзишен для элементов benefits__item
 
